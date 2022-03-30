@@ -5,6 +5,7 @@
 
 body {
     display: flex;
+    /* To center the flex */
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -13,28 +14,28 @@ body {
 }
 
 main {
-    border: 1px solid black;
-    border-radius: 10px;
     display: flex;
     width: 90vh;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .card {
+    height: 75vh;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    flex: 0.6;
     border-radius: 60px;
     cursor: pointer;
-    flex: 0.6;
-    margin: 12px;
     position: relative;
     transition: flex 1.5s ease-in;
     color: #ffff;
+    margin: 12px;
 }
 
 .card h4 {
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     bottom: 15px;
     left: 30px;
@@ -47,6 +48,7 @@ main {
 }
 
 .card.on h4 {
+    /* Only a 'on' image will display its name  */
     opacity: 1;
 }
 
