@@ -11,13 +11,15 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    background-color: rgb(223, 207, 190);
 }
 
 main {
     display: flex;
-    width: 90vh;
-    border: 1px solid black;
+    width: 100vh;
+    border: 2px solid black;
     border-radius: 10px;
+    background-color: #ffff;
 }
 
 .card {
@@ -50,9 +52,10 @@ main {
 .card.on h4 {
     /* Only a 'on' image will display its name  */
     opacity: 1;
+    transition: opacity 0.5s ease-in 0.9s;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 470px) {
     .card:nth-of-type(5), .card:nth-of-type(6), .card:nth-of-type(7) {
         display: none;
     }
