@@ -29,7 +29,7 @@ main {
     flex: 0.6;
     margin: 12px;
     position: relative;
-    transition: flex 0.9s ease-in;
+    transition: flex 1.5s ease-in;
     color: #ffff;
 }
 
@@ -42,19 +42,15 @@ main {
     opacity: 0;
 }
 
-.card.active {
+.card.on {
     flex: 7;
 }
 
-.card.active h4 {
+.card.on h4 {
     opacity: 1;
 }
 
 @media (max-width: 550px) {
-    .container {
-        width: 100vh;
-    }
-
     .card:nth-of-type(5), .card:nth-of-type(6), .card:nth-of-type(7) {
         display: none;
     }
