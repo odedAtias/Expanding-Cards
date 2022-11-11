@@ -1,4 +1,4 @@
-# Expanding-Cards
+# Expanding-Cards 🃏
 
 Create a simple expanding cards that displays a title at bottom, and various images on click.
 
